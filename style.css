@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+
+body{
+    background-color: var(--Light-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+.form-data{
+    background-color: var(--White);
+    width:450px;
+    height: fit-content;
+    border-radius: 8px 8px 6rem 8px;
+}
+.day, .month, .year{
+    display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: var(--Smokey-grey);
+}
+.form-content{
+   display: flex;
+   margin: 20px; 
+  
+}
+#input-data{
+    padding:0.8rem;
+    width: 5rem;
+    border:  1px solid var(--Off-white);
+    border-radius: 8px;
+    font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 3px; 
+  margin:0 10px 0 0;
+}
+
+.desh{
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--Purple);
+}
+.icon-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-arrow img{
+    background-color: var(--Purple);
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+.icon-arrow img:hover{
+    background: var(--Off-black);
+}
+
+.data-content{
+ display: flex;
+ flex-direction: column;
+ margin-top: 10px;
+ margin-left: 28px;
+}
+
+.data-content b{
+    font-size: 38px;
+    font-weight: 900;
+}
+.error-para{
+   font-size: 10px; 
+   font-weight: 400;
+   color: red;
+   display: none;
+}
+.error{
+    border: 1px solid red;
+}
